@@ -16,13 +16,15 @@ import {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" className="menu section" exact element={<MenuPage />} />
-      <Route path="/login" element={<Loginpage />} />
-      <Route element={<ProtectedRoutes />}>
-        <Route path="/adminpage" element={<Adminpage />} />
-      </Route>
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" className="menu section" exact element={<MenuPage />} />
+        <Route path="/login" element={<Loginpage />} />
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/adminpage" element={<Adminpage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
