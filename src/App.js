@@ -16,15 +16,13 @@ import {
 
 function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" className="menu section" exact element={<MenuPage />} />
-        <Route path="/login" element={<Loginpage />} />
-        <Route element={<ProtectedRoutes />}>
-          <Route path="/adminpage" element={<Adminpage />} />
-        </Route>
-      </Routes>
-    </HashRouter>
+    <Routes>
+      <Route path="/" className="menu section" exact element={<MenuPage />} />
+      <Route path="/login" element={<Loginpage />} />
+      <Route element={<ProtectedRoutes />}>
+        <Route path="/adminpage" element={<Adminpage />} />
+      </Route>
+    </Routes>
   );
 }
 
