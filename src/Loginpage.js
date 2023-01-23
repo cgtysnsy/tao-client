@@ -39,14 +39,15 @@ function App() {
       });
   };
   return (
-    <div>
-      <h1>Login</h1>
-      <form onSubmit={loginUser}>
+    <div className="login-container">
+      <img src="./images/tao.jpg" alt="tao" className="tao-image login-image" />
+      <form onSubmit={loginUser} className="login-form">
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="Email"
+          className="login-input"
         />
         <br />
         <input
@@ -54,9 +55,10 @@ function App() {
           onChange={(e) => setPassword(e.target.value)}
           type="password"
           placeholder="Password"
+          className="login-input"
         />
         <br />
-        <input type="submit" value="Login" />
+        <input type="submit" value="Login" className="login-button" />
       </form>
     </div>
   );

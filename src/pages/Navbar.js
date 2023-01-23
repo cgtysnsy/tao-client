@@ -68,77 +68,84 @@ function Navbar() {
 
   return (
     <nav className="navbar-manual">
-      <Col md={6} className="mb-2">
+      <Col md={6} className="mb-2 toast-add">
         <button onClick={toggleShowA} className="filter-btn">
           Add a New Item
         </button>
         <Toast show={showA} onClose={toggleShowA}>
-          <Toast.Header>
-            {/* <img
-              src="holder.js/20x20?text=%20"
-              className="rounded me-2"
-              alt=""
-            /> */}
-          </Toast.Header>
           <Toast.Body>
-            <Form>
-              <Form.Group className="mb-3">
-                <Form.Label>Title</Form.Label>
+            <Form className="item-info-edit">
+              <Form.Group className="mb-3 add-form">
+                <Form.Label for="title">
+                  <strong>Title </strong>
+                </Form.Label>
                 <Form.Control
+                  id="title"
                   type="text"
-                  placeholder="Title"
                   name="title"
                   onChange={onInputChange}
                   defaultValue={newMenuItem.title}
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Category</Form.Label>
+              <Form.Group className="mb-3 add-form">
+                <Form.Label for="category">
+                  <strong>Category </strong>
+                </Form.Label>
                 <Form.Control
+                  id="category"
                   type="text"
-                  placeholder="Category"
                   name="category"
                   onChange={onInputChange}
                   defaultValue={newMenuItem.category}
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Price</Form.Label>
+              <Form.Group className="mb-3 add-form">
+                <Form.Label for="price">
+                  <strong>Price </strong>
+                </Form.Label>
                 <Form.Control
                   type="number"
-                  placeholder="Price"
+                  id="price"
                   name="price"
                   onChange={onInputChange}
                   defaultValue={newMenuItem.price}
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Image</Form.Label>
+              <Form.Group className="mb-3 add-form">
+                <Form.Label for="image">
+                  <strong>Image </strong>
+                </Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="image"
+                  id="image"
                   name="img"
                   onChange={onInputChange}
                   defaultValue={newMenuItem.img}
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Description</Form.Label>
+              <Form.Group className="mb-3 add-form">
+                <Form.Label for="Description">
+                  <strong>Description</strong>
+                </Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Description"
+                  id="Description"
                   name="desc"
                   onChange={onInputChange}
                   defaultValue={newMenuItem.desc}
                 />
               </Form.Group>
             </Form>
-            <button onClick={toggleShowA}>Close</button>
-            <button onClick={onSubmit}>Save Changes</button>
+            <button onClick={toggleShowA} className="filter-btn">
+              Close
+            </button>
+            <button onClick={onSubmit} className="filter-btn">
+              Save
+            </button>
           </Toast.Body>
         </Toast>
       </Col>
