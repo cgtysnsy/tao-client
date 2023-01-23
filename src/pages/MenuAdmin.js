@@ -55,7 +55,7 @@ const Menu = ({ items }) => {
     );
     try {
       const res = await axios.put(
-        `http://localhost:5000/menus/update/${idForEditMenuItem}`,
+        `https://taoserver.onrender.com/menus/update/${idForEditMenuItem}`,
         editMenuItem
       );
       window.location.href = "/adminpage";
@@ -69,7 +69,7 @@ const Menu = ({ items }) => {
   const deleteMenuItem = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:5000/menus/delete/${id}`
+        `https://taoserver.onrender.com/menus/delete/${id}`
       );
       window.location.href = "/adminpage";
     } catch (err) {

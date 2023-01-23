@@ -10,6 +10,8 @@ import {
   Accordion,
 } from "react-bootstrap";
 import axios from "axios";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 function Navbar() {
   //state for Toast model
@@ -47,7 +49,7 @@ function Navbar() {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/menus/add",
+        "https://taoserver.onrender.com/menus/add",
         newMenuItem
       );
       console.log(res);
@@ -57,6 +59,12 @@ function Navbar() {
     } finally {
     }
   };
+
+  function handleLogout() {
+    // Perform logout actions
+    cookies.remove("TOKEN", { path: "/" });
+    window.location = "/";
+  }
 
   return (
     <nav className="navbar-manual">
@@ -135,7 +143,7 @@ function Navbar() {
         </Toast>
       </Col>
       <Col md={6} className="mb-2">
-        <button type="button" className="filter-btn">
+        <button type="button" className="filter-btn" onClick={handleLogout}>
           Logout
         </button>
       </Col>

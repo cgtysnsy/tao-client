@@ -23,7 +23,7 @@ const Adminpage = () => {
     // set configurations for the API call here
     const configuration = {
       method: "get",
-      url: "http://localhost:3000/auth-endpoint",
+      url: "https://taoserver.onrender.com/auth-endpoint",
       headers: {
         Authorization: `Bearer ${token}`,
       },
