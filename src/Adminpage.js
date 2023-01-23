@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Cookies from "universal-cookie";
+import MenuPageAdmin from "./pages/MenuPageAdmin";
+
 const cookies = new Cookies();
 
 const Adminpage = () => {
@@ -37,7 +39,7 @@ const Adminpage = () => {
       });
   }, []);
 
-  return <h1>AdminPage</h1>;
+  return <MenuPageAdmin />;
 };
 
 export default Adminpage;

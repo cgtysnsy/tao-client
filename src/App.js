@@ -3,16 +3,8 @@ import MenuPage from "./MenuPage";
 import Loginpage from "./Loginpage";
 import Adminpage from "./Adminpage";
 import ProtectedRoutes from "./ProtectedRoutes";
-//import items from "./data";
 
-//import { useQuery } from "react-query";
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-  Navigate,
-  HashRouter,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

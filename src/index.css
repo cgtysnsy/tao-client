@@ -142,6 +142,12 @@ Menu
 ===============
 */
 
+.navbar-manual {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .menu {
   padding: 5rem 0;
 }
@@ -193,7 +199,7 @@ Menu
 .menu-item {
   display: grid;
   gap: 1rem 2rem;
-  max-width: 25rem;
+  max-width: 30rem;
 }
 .photo {
   object-fit: cover;
@@ -202,6 +208,34 @@ Menu
   border: 0.25rem solid #e9bc2a;
   border-radius: var(--radius);
   display: block;
+}
+
+.menu-item-edit {
+  display: grid;
+  gap: 1rem 2rem;
+  width: 100%;
+  max-width: 640px;
+}
+.item-info-edit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.item-info-edit header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted var(--clr-grey-5);
+}
+.item-info-edit input {
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #f9f8f4;
+  padding: 0.2rem;
+}
+.item-info-edit input:focus {
+  outline: 1px solid #e9bc2a;
 }
 .item-info header {
   display: flex;
