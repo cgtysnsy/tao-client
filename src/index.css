@@ -149,6 +149,66 @@ Menu
 ===============
 */
 
+.container-user-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.background-container {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+}
+
+.background-container-list {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.container-user-menu-list {
+  position: absolute;
+  z-index: 2;
+}
+.images-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.images-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.yellow {
+  right: -20%;
+  top: -20%;
+  z-index: 1;
+}
+
+.green {
+  bottom: 40%;
+  right: 40%;
+  z-index: 3;
+}
+.red {
+  z-index: 2;
+  top: -650px;
+}
+
 .navbar-manual {
   display: flex;
   justify-content: space-around;
