@@ -84,7 +84,7 @@ export default function MenuPage() {
         <Categories filterItems={filterItems} categories={categories} />
         <Menu items={filteredMenuItems} />
         <p className="footer-container">
-          Build by{" "}
+          Built by{" "}
           <a href="https://www.linkedin.com/in/cagatay-sensoy/" target="blank">
             Cagatay Sensoy
           </a>
