@@ -131,7 +131,7 @@ const Menu = ({ items }) => {
     } else if (item._id !== wantEdit.itemId) {
       return (
         <article key={i} className="menu-item">
-          <img src={item.img} alt={item.title} className="photo" />
+          {/* <img src={item.img} alt={item.title} className="photo" /> */}
           <div className="item-info">
             <header>
               <h4>{item.title}</h4>

@@ -6,10 +6,10 @@ function NavBar() {
   return (
     <>
       <Navbar
-        className="my-2"
+        className="mt-2"
         color="dark"
         dark
-        style={{ padding: "1rem", margin: "1rem" }}
+        style={{ padding: "0 1rem", margin: "0 1rem" }}
       >
         <NavbarBrand href="/">
           <SocialIcon
@@ -21,10 +21,10 @@ function NavBar() {
           />
         </NavbarBrand>
       </Navbar>
-      <Navbar className="m-6" color="secondary" dark></Navbar>
+      {/* <Navbar className="m-6" color="secondary" dark></Navbar>
       <Navbar className="my-2" color="dark" dark>
         <NavbarBrand href="/"></NavbarBrand>
-      </Navbar>
+      </Navbar> */}
     </>
   );
 }

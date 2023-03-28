@@ -21,6 +21,7 @@ function App() {
         password,
       },
     };
+    console.log("configuration", configuration);
     // make the API call
     axios(configuration)
       .then((result) => {
