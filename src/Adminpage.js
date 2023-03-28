@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import jwt from "jsonwebtoken";
-import { useNavigate } from "react-router-dom";
+// import jwt from "jsonwebtoken";
+// import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Cookies from "universal-cookie";
 import MenuPageAdmin from "./pages/MenuPageAdmin";
@@ -8,16 +8,16 @@ import MenuPageAdmin from "./pages/MenuPageAdmin";
 const cookies = new Cookies();
 
 const Adminpage = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const token = cookies.get("TOKEN");
   const [message, setMessage] = useState("");
 
-  function handleLogout() {
-    console.log("click");
-    // Perform logout actions
-    cookies.remove("TOKEN", { path: "/" });
-    window.location = "/";
-  }
+  // function handleLogout() {
+  //   console.log("click");
+  //   // Perform logout actions
+  //   cookies.remove("TOKEN", { path: "/" });
+  //   window.location = "/";
+  // }
 
   useEffect(() => {
     // set configurations for the API call here

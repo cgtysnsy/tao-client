@@ -1,14 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  Button,
-  Container,
-  Row,
-  Col,
-  Modal,
-  Form,
-  Toast,
-  Accordion,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Col, Form, Toast } from "react-bootstrap";
 import axios from "axios";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();

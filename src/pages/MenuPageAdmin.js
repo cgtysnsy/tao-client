@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import MenuAdmin from "./MenuAdmin";
 import CategoriesAdmin from "./CategoriesAdmin";
 import Navbar from "./Navbar";
-import { Button, Container, Row, Col, Modal, Form } from "react-bootstrap";
 
 import axios from "axios";
 
@@ -14,7 +13,7 @@ export default function MenuPage() {
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState(null);
 
-  const [modal, setModal] = useState({ name: "", active: false });
+  // const [modal, setModal] = useState({ name: "", active: false });
 
   useEffect(() => {
     async function fetchData() {
