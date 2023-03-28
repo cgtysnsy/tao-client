@@ -193,7 +193,7 @@ Menu
 
 .yellow {
   position: absolute;
-  max-width: 100%;
+  max-width: 800px;
   right: -20%;
   top: -20%;
   z-index: 1;
@@ -314,7 +314,7 @@ Menu
   max-width: 1170px;
   display: grid;
   gap: 3rem 2rem;
-  justify-items: left;
+  justify-items: center;
   position: relative;
 }
 .menu-item {
@@ -382,16 +382,16 @@ Menu
   padding-top: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .menu-item {
-    grid-template-columns: 225px 1fr;
-    gap: 0 1.25rem;
+    grid-template-columns: 1fr 1fr;
+
     max-width: 40rem;
   }
   .photo {
     height: 175px;
   }
-}
+} */
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
@@ -399,5 +399,26 @@ Menu
   }
   .photo {
     height: 150px;
+  }
+  .yellow {
+    position: absolute;
+    max-width: 800px;
+    right: 0%;
+    top: -20%;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .green {
+    position: absolute;
+    right: 30%;
+    width: 100%;
+    height: 100%;
+  }
+  .red {
+    position: absolute;
+    max-width: 100%;
+    bottom: -5%;
+    right: 1%;
   }
 }
