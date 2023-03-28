@@ -49,10 +49,7 @@ const Menu = ({ items }) => {
 
   const editSendMenuItem = async () => {
     const idForEditMenuItem = wantEdit.itemId;
-    console.log(
-      "🚀 ~ file: MenuAdmin.js:76 ~ editSendMenuItem ~ editMenuItem",
-      editMenuItem
-    );
+
     try {
       const res = await axios.put(
         `https://taoserver.onrender.com/menus/update/${idForEditMenuItem}`,
@@ -78,10 +75,10 @@ const Menu = ({ items }) => {
     }
   };
 
-  const element = items.map((item, i) => {
+  const element = items.map((item) => {
     if (item._id === wantEdit.itemId) {
       return (
-        <article key={i} className="menu-item-edit">
+        <article key={item._id} className="menu-item-edit">
           <div className="item-info-edit">
             <header>
               <h3>{item.title}</h3>
@@ -130,7 +127,7 @@ const Menu = ({ items }) => {
       );
     } else if (item._id !== wantEdit.itemId) {
       return (
-        <article key={i} className="menu-item">
+        <article key={item._id} className="menu-item">
           {/* <img src={item.img} alt={item.title} className="photo" /> */}
           <div className="item-info">
             <header>
