@@ -83,6 +83,12 @@ export default function MenuPage() {
         </div>
         <Categories filterItems={filterItems} categories={categories} />
         <Menu items={filteredMenuItems} />
+        <p className="footer-container">
+          Build by{" "}
+          <a href="https://www.linkedin.com/in/cagatay-sensoy/" target="blank">
+            Cagatay Sensoy
+          </a>
+        </p>
       </div>
     </div>
   );
